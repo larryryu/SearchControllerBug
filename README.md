@@ -9,3 +9,7 @@ Steps to reproduce
 - Tap back button
 
 Note that [ViewController2 dealloc] is never called.
+
+Below is the memory graph of the app after ViewController2 is dismissed.
+
+![Alt text](https://github.com/larryryu/SearchControllerBug/blob/master/memory_graph.png)
