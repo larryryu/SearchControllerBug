@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zag-H5-rgV">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Pij-3E-FA0">
+            <objects>
+                <navigationController id="Zag-H5-rgV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3VH-9V-HJS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RW4-wf-eI3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJ5-Ex-nez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="-175"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +32,56 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWa-yv-6n4">
+                                <rect key="frame" x="266" y="285" width="69" height="30"/>
+                                <state key="normal" title="Next View"/>
+                                <connections>
+                                    <segue destination="mTw-wr-gOv" kind="push" id="CEF-8l-x4a"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GWa-yv-6n4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uqn-CM-MaK"/>
+                            <constraint firstItem="GWa-yv-6n4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="za4-NL-ZfX"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TN5-1n-DbA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="821" y="-175"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="oQD-b5-ySx">
+            <objects>
+                <viewController id="mTw-wr-gOv" customClass="ViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZUD-TA-gFd"/>
+                        <viewControllerLayoutGuide type="bottom" id="2lz-83-KPA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D3Y-56-TrF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Fw-uc-JNK"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="1iE-fH-zgC" id="dFm-h4-rQD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UM3-Kc-lff" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="1iE-fH-zgC">
+                    <connections>
+                        <outlet property="delegate" destination="mTw-wr-gOv" id="GmK-SS-nfb"/>
+                        <outlet property="searchContentsController" destination="mTw-wr-gOv" id="AZO-YZ-Vmy"/>
+                        <outlet property="searchResultsDataSource" destination="mTw-wr-gOv" id="IML-Yb-lhb"/>
+                        <outlet property="searchResultsDelegate" destination="mTw-wr-gOv" id="j3S-NM-rjh"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1535" y="-175"/>
         </scene>
     </scenes>
 </document>

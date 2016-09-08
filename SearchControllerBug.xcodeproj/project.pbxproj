@@ -16,6 +16,7 @@
 		BD920E2A1D81AA6800A3E884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD920E281D81AA6800A3E884 /* LaunchScreen.storyboard */; };
 		BD920E351D81AA6800A3E884 /* SearchControllerBugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD920E341D81AA6800A3E884 /* SearchControllerBugTests.m */; };
 		BD920E401D81AA6800A3E884 /* SearchControllerBugUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD920E3F1D81AA6800A3E884 /* SearchControllerBugUITests.m */; };
+		BD920E4F1D81AB3D00A3E884 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = BD920E4E1D81AB3D00A3E884 /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		BD920E3B1D81AA6800A3E884 /* SearchControllerBugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchControllerBugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD920E3F1D81AA6800A3E884 /* SearchControllerBugUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchControllerBugUITests.m; sourceTree = "<group>"; };
 		BD920E411D81AA6800A3E884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD920E4D1D81AB3D00A3E884 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		BD920E4E1D81AB3D00A3E884 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				BD920E2B1D81AA6800A3E884 /* Info.plist */,
 				BD920E231D81AA6800A3E884 /* SearchControllerBug.xcdatamodeld */,
 				BD920E171D81AA6800A3E884 /* Supporting Files */,
+				BD920E4D1D81AB3D00A3E884 /* ViewController2.h */,
+				BD920E4E1D81AB3D00A3E884 /* ViewController2.m */,
 			);
 			path = SearchControllerBug;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			files = (
 				BD920E251D81AA6800A3E884 /* SearchControllerBug.xcdatamodeld in Sources */,
 				BD920E1F1D81AA6800A3E884 /* ViewController.m in Sources */,
+				BD920E4F1D81AB3D00A3E884 /* ViewController2.m in Sources */,
 				BD920E1C1D81AA6800A3E884 /* AppDelegate.m in Sources */,
 				BD920E191D81AA6800A3E884 /* main.m in Sources */,
 			);
